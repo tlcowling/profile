@@ -1,5 +1,6 @@
 # My Extras
 *.db
+.tmp
 
 # Logs
 logs
