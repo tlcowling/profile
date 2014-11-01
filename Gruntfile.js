@@ -18,11 +18,11 @@ module.exports = function(grunt) {
         files: [ 
           { 
              dest: '.tmp/concat/css/style.min.css', 
-             src: [ 'assets/css/style.css', 'assets/css/print.css' ] 
+             src: [ 'assets/css/style.css', 'assets/css/print.css','assets/plugins/fancybox/jquery.fancybox-1.3.4.css' ] 
           },
           { 
              dest: '.tmp/concat/js/optimized.js',
-             src: [ 'assets/js/general.js', 'assets/js/jquery.min.js' ] 
+             src: [ 'assets/js/jquery.min.js','assets/js/general.js'  ] 
           } 
         ] 
       } 
@@ -47,12 +47,6 @@ module.exports = function(grunt) {
         ]
       }
     },
-    
-    
-    
-    
-    
-    
     usemin: {
       html: [ 'dist/index.html' ]
     },
