@@ -3,6 +3,16 @@ module.exports = function(grunt) {
 
   grunt.config.init({
     pkg: grunt.file.readJSON('package.json'),
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd   : 'assets/images',
+          src   : ['**/*.{png,jpg,gif}'],
+          dest: 'dist/images'
+        }]
+      }
+    },
     concat: { 
       generated: { 
         files: [ 
@@ -72,6 +82,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['build']);
   grunt.registerTask('build', ['jshint','copy:html','useminPrepare','concat','uglify','cssmin','usemin']);
 
+  grunt.registerTask('compressimages', ['imagemin']);
   grunt.registerTask('deploy', ['build','rsync:prod']);
 
 };
