@@ -12,7 +12,7 @@ module.exports = function(grunt) {
           },
           { 
              dest: '.tmp/concat/assets/js/optimized.js',
-             src: [ 'assets/js/general.js' ] 
+             src: [ 'assets/js/general.js', 'assets/js/jquery.min.js' ] 
           } 
         ] 
       } 
@@ -53,10 +53,25 @@ module.exports = function(grunt) {
     },
     jshint: {
       files: [ 'Gruntfile.js', 'src/**/*.js', 'test/**/*.js' ]
+    },
+    rsync: {
+      options: {
+        recursive: true,
+        args: [ "--verbose"]
+      },
+      prod: {
+        options: {
+          src: 'dist/*',
+          dest: '/var/www/tlcowling.com/public_html/profile',
+          host: 'deployer@tlcowling.com'
+        }
+      }
     }
   });
 
   grunt.registerTask('default', ['build']);
   grunt.registerTask('build', ['jshint','copy:html','useminPrepare','concat','uglify','cssmin','usemin']);
+
+  grunt.registerTask('deploy', ['build','rsync:prod']);
 
 };
