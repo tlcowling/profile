@@ -2,6 +2,9 @@
 dist
 *.db
 .tmp
+.idea
+*.iml
+
 
 # Logs
 logs
