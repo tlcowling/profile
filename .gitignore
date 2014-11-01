@@ -1,4 +1,5 @@
 # My Extras
+dist
 *.db
 .tmp
 

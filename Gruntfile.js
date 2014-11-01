@@ -8,14 +8,34 @@ module.exports = function(grunt) {
         files: [ 
           { 
              dest: '.tmp/concat/assets/css/style.min.css', 
-             src: [ 'assets/css/style.css' ] 
+             src: [ 'assets/css/style.css', 'assets/css/print.css' ] 
           },
           { 
              dest: '.tmp/concat/assets/js/optimized.js',
-             src: [ 'assets/js/foo.js', 'assets/js/bar.js' ] 
+             src: [ 'assets/js/general.js' ] 
           } 
         ] 
       } 
+    },
+    uglify: { 
+      generated: { 
+        files: [ 
+          { 
+            dest: 'dist/assets/js/optimized.js',
+            src: [ '.tmp/concat/assets/js/optimized.js' ] 
+          } 
+        ] 
+      } 
+    },
+    cssmin: {
+      generated: {
+        files: [
+          { 
+            dest: 'dist/assets/css/style.min.css',
+            src : [ '.tmp/concat/assets/css/style.min.css' ] 
+          }
+        ]
+      }
     },
     useminPrepare: {
       html: 'index.html',
