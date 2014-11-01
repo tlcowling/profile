@@ -18,7 +18,7 @@ module.exports = function(grunt) {
         files: [ 
           { 
              dest: '.tmp/concat/css/style.min.css', 
-             src: [ 'assets/css/style.css', 'assets/css/print.css','assets/plugins/fancybox/jquery.fancybox-1.3.4.css' ] 
+             src: [ 'assets/css/style.css', 'assets/plugins/fancybox/jquery.fancybox-1.3.4.css' ] 
           },
           { 
              dest: '.tmp/concat/js/optimized.js',
@@ -67,6 +67,13 @@ module.exports = function(grunt) {
         options: {
           src: 'dist/*',
           dest: '/var/www/tlcowling.com/public_html/profile',
+          host: 'deployer@tlcowling.com'
+        }
+      },
+      stage: {
+        options: {
+          src: 'assets/*',
+          dest: '/var/www/tlcowling.com/public_html/profile2',
           host: 'deployer@tlcowling.com'
         }
       }

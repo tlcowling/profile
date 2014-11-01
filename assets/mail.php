@@ -9,7 +9,7 @@
 	*/
 	
 	// TO email address
-	$send_to 				= 	'example@example.com';
+	$send_to 				= 	'enquiries@tlcowling.com';
 	
 	// Form field data and names
 	$name 					= 	stripslashes(strip_tags($_POST["cf_name"]));
