@@ -38,7 +38,7 @@ module.exports = function(grunt) {
       }
     },
     useminPrepare: {
-      html: 'index.html',
+      html: 'assets/index.html',
       options: {
         dest: 'dist'
       }
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
     },
     copy: {
       html: {
-        src: './index.html', dest: 'dist/index.html'
+        src: 'assets/index.html', dest: 'dist/index.html'
       }
     },
     jshint: {
@@ -56,7 +56,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', ['jshint']);
-  grunt.registerTask('build', ['copy:html','useminPrepare','concat','uglify','cssmin','usemin']);
+  grunt.registerTask('default', ['build']);
+  grunt.registerTask('build', ['jshint','copy:html','useminPrepare','concat','uglify','cssmin','usemin']);
 
 };
