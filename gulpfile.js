@@ -15,7 +15,7 @@ var paths = {
   src: 'site',
   build: 'build/**',
   scripts: 'site/js/**/*.js',
-  images: 'site/img/**/*'
+  images: 'site/images/**/*'
 };
 
 gulp.task('usemin', function() {
