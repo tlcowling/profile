@@ -9,8 +9,10 @@ var minifyCss = require('gulp-minify-css');
 var minifyHtml = require('gulp-minify-html');
 var usemin = require('gulp-usemin');
 var rsync = require('gulp-rsync');
+var webserver = require('gulp-webserver');
 
 var paths = {
+  src: 'site',
   build: 'build/**',
   scripts: 'site/js/**/*.js',
   images: 'site/img/**/*'
@@ -58,4 +60,13 @@ gulp.task('deploy', ['usemin'], function() {
                  }));     
 });
 
-gulp.task('default', ['scripts', 'images'], function() { });
+gulp.task('develop', function() {
+  gulp.src(paths.src)
+      .pipe(webserver({
+         livereload: true,
+         directoryListing: false,
+         open: true
+      }));
+});
+
+gulp.task('default', ['usemin'], function() { });
