@@ -47,7 +47,7 @@ gulp.task('scripts', ['clean'], function() {
 gulp.task('images', ['clean'], function() {
   return gulp.src(paths.images)
              .pipe(imagemin({optimizationLevel: 5}))
-             .pipe(gulp.dest('build/img'));
+             .pipe(gulp.dest('build/images'));
 });
 
 gulp.task('deploy', ['usemin'], function() {
