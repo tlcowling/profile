@@ -18,7 +18,7 @@ var paths = {
   images: 'site/images/**/*'
 };
 
-gulp.task('usemin', function() {
+gulp.task('usemin', ['images'], function() {
   return gulp.src('./site/*html')
      .pipe(usemin({
        css: [minifyCss(), 'concat'],
@@ -50,7 +50,7 @@ gulp.task('images', ['clean'], function() {
              .pipe(gulp.dest('build/images'));
 });
 
-gulp.task('deploy', ['usemin'], function() {
+gulp.task('deploy', ['images', 'usemin'], function() {
   return gulp.src(paths.build)
              .pipe(rsync({
                    username: 'deployer',
