@@ -12,6 +12,16 @@
         var name    = req.body.name;
         var email   = req.body.email;
         var message = req.body.message;
+
+        if (EnquiryValidator.isInvalidName(name)) {
+            res.status(400).json('Invalid Name');
+        } else if (EnquiryValidator.isInvalidEmail(email)) {
+            res.status(400).json('Invalid Email');
+        } else if (EnquiryValidator.isInvalidMessage(message)) {
+            res.status(400).json('Invalid Message');
+        } else {
+            res.status(200).json('Thank you for your message...');
+        }
     });
 
     module.exports = router;
