@@ -1,5 +1,8 @@
 build
 
+# No passwords here!
+email.json
+
 # My Extras
 dist
 *.db
