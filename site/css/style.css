@@ -17,7 +17,7 @@ body {
 	border-top:3px solid #555;
 }
 body, 
-form.standard .textarea {
+div.form .textarea {
 	font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -260,60 +260,60 @@ a#panel_toggle:hover {
 /* Form Styles
 ----------------------------------------------------------------------------------------------------*/
 
-form textarea:focus,
-form input:focus { 
+div.form textarea:focus,
+div.form input:focus { 
 	outline:0;  
 }
 
-form.standard .textbox,
-form.standard .textarea,
-form.standard .submit {
+div.form .textbox,
+div.form .textarea,
+div.form .submit {
 	display:block;
 	border:1px solid #e9e9e9;
 	background:#fff;
 	color:#999;
 	padding:9px 8px;
 }
-form.standard .textbox:hover,
-form.standard .textarea:hover,
-form.standard .submit:hover {
+div.form .textbox:hover,
+div.form .textarea:hover,
+div.form .submit:hover {
 	border-color:#e0e0e0;
 }
-form.standard .textbox,
-form.standard .textarea {
+div.form .textbox,
+div.form .textarea {
 	margin-bottom:10px;
 	width:280px;
 }
-form.standard .textarea {
+div.form .textarea {
 	height:100px;
 	font-size:inherit;
 }
-form.standard .submit {
+div.form .submit {
 	width:144px;
 	cursor:pointer;
 	padding:6px 5px 6px 0px;
 }
-form.standard .submit span {
+div.form .submit span {
 	display:block;
 	margin:0;
 	padding:0 15px 0 0;
 	background:url(../images/arrow_right_circle.png) no-repeat right top;
 	line-height:18px;
 }
-form.standard .submit:hover span {
+div.form .submit:hover span {
 	background-position:right -30px;
 }
 
-form.standard .textbox,
-form.standard .submit,
-form.standard .textarea {
+div.form .textbox,
+div.form .submit,
+div.form .textarea {
 	background:url(../images/bg_formfield.png) repeat-x left top;
 }
-form.standard .submit:hover {
+div.form .submit:hover {
 	color:#555;
 }
-form.standard .form-error,
-form.standard .form-error:hover {
+div.form .form-error,
+div.form .form-error:hover {
 	border-left-color:#c00;
 	background:#ffd7d7;
 }

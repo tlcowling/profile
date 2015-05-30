@@ -1,15 +1,15 @@
-var gulp = require('gulp');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var imagemin = require('gulp-imagemin');
+var gulp       = require('gulp');
+var concat     = require('gulp-concat');
+var uglify     = require('gulp-uglify');
+var imagemin   = require('gulp-imagemin');
 var sourcemaps = require('gulp-sourcemaps');
-var del = require('del');
-var rev = require('gulp-rev');
-var minifyCss = require('gulp-minify-css');
+var del        = require('del');
+var rev        = require('gulp-rev');
+var minifyCss  = require('gulp-minify-css');
 var minifyHtml = require('gulp-minify-html');
-var usemin = require('gulp-usemin');
-var rsync = require('gulp-rsync');
-var webserver = require('gulp-webserver');
+var usemin     = require('gulp-usemin');
+var rsync      = require('gulp-rsync');
+var webserver  = require('gulp-webserver');
 
 var paths = {
   src: 'site',

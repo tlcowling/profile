@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-	<!--Resume / Portfolio Website Template by Cudazi.com for ThemeForest.net-->
+	<!--Resume / Original Design by Cudazi.com -->
+	<!--Heavily modified by Tom Cowling -->
 	<title>Tom Cowling -- DevOps Engineer --</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
@@ -12,17 +13,14 @@
     <!-- endbuild -->
 	
     <!-- build:js js/lib.js -->
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/general.js"></script>
-	<script type="text/javascript" src="plugins/cycle/jquery.cycle.all.min.js"></script>
-	<script type="text/javascript" src="plugins/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/analytics.js"></script>
+    <script type="text/javascript" src="js/submit.js"></script>
     <!-- endbuild -->
 </head>
 
 <body>
 	<a name="jump-top" id="jump-top"></a>
-	
 	<div id="panel" class="hidden">
 		<div class="col_wrap">
 			<div class="col_half">
@@ -42,40 +40,36 @@
 			<div class="clear"></div>
 		</div><!--//col_wrap-->			
 	</div><!--//navigation-->
-	<div id="control_wrap"><a id="panel_toggle" href="#"><span>Downloads</span></a></div>
-	
-	
+
+    <div id="control_wrap">
+        <a id="panel_toggle" href="#">
+            <span>Downloads</span>
+        </a>
+    </div>
+
 	<div id="wrapper" class="shadow">
 		<div id="main" class="shadow">
 			<div class="col_wrap">
 
 				<h1>Thomas L. Cowling</h1>
-				<h2>Software and DevOps Engineer <br />.</h2>
-
-                <div class="section section-education clearfix">
-                    <h3>Education</h3>
-
-                    <p class="col_three_quarter"><strong>MPhys, (Hons), Physics</strong> from University of Manchester, Manchester, United Kingdom</p>
-                    <p class="col_quarter col_last"><span class='right'>2006 <small>to</small> 2010</span></p>
-                    <div class="clear"></div>
-
-                    <p class="col_three_quarter"><strong>A Levels., Maths (A), Further Maths (A), Chemistry (A), Physics (B)</strong> from Queen Katherine School, Kendal, United Kingdom</p>
-                    <p class="col_quarter col_last"><span class='right'>2005 <small>to</small> 2006</span></p>
-                    <div class="clear"></div>
-
-                    <p class="col_three_quarter"><strong>AS Levels., French (A), General Studies (A)</strong> from Queen Katherine School, Kendal, United Kingdom</p>
-                    <p class="col_quarter col_last"><span class='right'>2004 <small>to</small> 2005</span></p>
-                    <div class="clear"></div>
-
-
-                    <p class="col_three_quarter"><strong>GCSE Levels., 7A*, 3A including English, Maths, French and German </strong> from Queen Katherine School, Kendal, United Kingdom</p>
-                    <p class="col_quarter col_last"><span class='right'>2002 <small>to</small> 2004</span></p>
-
-                </div><!--//section-->
-
+				<h2>Software and DevOps Engineer<br /></h2>
 
                 <div class="section clearfix">
                     <h3>Work Experience</h3>
+
+                    <div class="col_quarter">
+                        <p><a href="http://www.cellusys.com" class="logo softbutton"><img src="images/logos/cellusys.png" alt="Cellusys Logo" width="137px" /></a></p>
+                    </div>
+                    <div class="col_three_quarter col_last">
+                        <p class="right"><small>Dec 2012 - May 2015</small></p>
+                        <h4>Software Engineer</h4>
+                        <h5>Cellusys Europe, Dublin Office</h5>
+                        <p>Infrastructure </p>
+                        <p>Networking </p>
+                        <p>Project Management in Zürich, Switzerland and Vienna, Austria </p>
+                    </div>
+
+                    <div class="clear"></div>
 
                     <div class="col_quarter">
                         <p><a href="http://www.thoughtworks.com" class="logo softbutton"><img src="images/logos/thoughtworks.gif" alt="ThoughtWorks Logo" width="137px" /></a></p>
@@ -84,9 +78,9 @@
                         <p class="right"><small>Oct 2011 - Nov 2012</small></p>
                         <h4>Consultant Developer</h4>
                         <h5>ThoughtWorks Europe, Manchester Office</h5>
-                        <p>Joined as part of the ThoughtWorks graduate programme, attended ThoughtWorks University in Bangalore, India.  Gained invaluable experience working as part of a Software Development team practising principles of Agile delivery, Kan ban processes and Lean Startup.  Joined the Manchester office </p>
-                        <p>Gained extensive experience using Test-Driven Development in a range of languages including Ruby and Rails, Java, Python and PHP.<br />Had the opportunity to train for 2 months in Bangalore with people from all over the world.<br /> Practiced extreme programming including agile methodologies, pair programming, drawing on knowledge of Kanban and the concept of the lean startup <br />First hand DevOps experience, using puppet to provision environments, automating build pipelines and following principles of continuous delivery<br />Part of the inception for the new corporate website project, working with marketing, user experience design and business analysts to craft the vision of the future website.<br />Worked with really talented people, and had the opportunity to mix with developer 'rockstars' including Martin Fowler and Ola Bini</p>
-
+                        <p>Joined the graduate programme attending ThoughtWorks University in Bangalore, India.</p>
+                        <p>Practised principles of Agile delivery, Kan ban processes and Lean Startup working with </p>
+                        <p>Gained experience with Test-Driven Development in a range of languages including Ruby and Rails, Java, Python and PHP.<br /></p>
                     </div>
 
                     <div class="clear"></div>
@@ -157,11 +151,27 @@
 
                     <p><a class="toggle" href="#">Show More</a></p>
 
+                </div><!--//section-->
 
+
+                <div class="section section-education clearfix">
+                    <h3>Education</h3>
+
+                    <p class="col_three_quarter"><strong>MPhys, (Hons), Physics</strong> from University of Manchester, Manchester, United Kingdom</p>
+                    <p class="col_quarter col_last"><span class='right'>2006 <small>to</small> 2010</span></p>
+                    <div class="clear"></div>
+
+                    <p class="col_three_quarter"><strong>AS & A Levels (AAAAB)., Maths (A), Further Maths (A), Chemistry (A), French (A), Physics (B)</strong> from Queen Katherine School, Kendal, United Kingdom</p>
+                    <p class="col_quarter col_last"><span class='right'>2004 <small>to</small> 2006</span></p>
+                    <div class="clear"></div>
+
+                    <p class="col_three_quarter"><strong>GCSEs., 7A*, 3A including English, Maths, French and German </strong> from Queen Katherine School, Kendal, United Kingdom</p>
+                    <p class="col_quarter col_last"><span class='right'>2002 <small>to</small> 2004</span></p>
 
                 </div><!--//section-->
-				
-				
+
+
+
 
 				
 				<div class="section clearfix">
@@ -170,8 +180,8 @@
 						<ul class="clean">
 							<!-- specify width/height when using HTML to help out older browsers slide HTML content -->
 							<li class="clearfix" style="height:140px;">
-								<div class="col_quarter"><p><a rel="gallery" title="Optional Lightbox Description" href="images/gallery/01_large.jpg"><img src="images/gallery/01_small.jpg" alt="Portfolio Item" /></a><br /><small>Optional Description</small></p></div>
-								<div class="col_quarter"><p><a rel="gallery" title="Optional Lightbox Description" href="images/gallery/02_large.jpg"><img src="images/gallery/02_small.jpg" alt="Portfolio Item" /></a><br /><small>Optional Description</small></p></div>
+								<div class="col_quarter"><p><a rel="gallery" title="Confmake - Configuration Making Utility Tool" href="images/gallery/01_large.jpg"><img src="images/gallery/01_small.jpg" alt="Portfolio Item" /></a><br /><small>Configuration Making Utility Tool written in Ruby, for procedurally generating configuration files.</small></p></div>
+								<div class="col_quarter"><p><a rel="gallery" title="Slapface - Javascript and Nodejs Simplified Restful LDAP Interface" href="images/gallery/02_large.jpg"><img src="images/gallery/02_small.jpg" alt="Portfolio Item" /></a><br /><small>A simple API for interacting with the LDAP protocol, uses only users and groups.</small></p></div>
 								<div class="col_quarter"><p><a rel="gallery" title="Optional Lightbox Description" href="images/gallery/03_large.jpg"><img src="images/gallery/03_small.jpg" alt="Portfolio Item" /></a><br /><small>Optional Description</small></p></div>				
 								<div class="col_quarter col_last"><p><a rel="gallery" title="Optional Lightbox Description" href="images/gallery/04_large.jpg"><img src="images/gallery/04_small.jpg" alt="Portfolio Item" /></a><br /><small>Optional Description</small></p></div>
 							</li>
@@ -185,13 +195,8 @@
 					
 						<p><a href="#" class="next right">Load More &raquo;</a></p>
 					</div>
-					<script type="text/javascript">
-						jQuery(function($){ $("#promo_44 UL").cycle({ /* add options here */ fx:'scrollHorz',next:'#promo_44 .next', timeout:0, speed:500 }); });
-					</script>
 				</div><!--//section-->
-				
-				
-				
+
 				
 				<div class="section clearfix">
 					<h3>Skills</h3>
@@ -229,27 +234,44 @@
 						<p>Lorem ipsum dolor sit amet, consectetur elit. Mauris porta enim, ut consequat risus adipiscing a.</p>					
 					</div>
 					<div class="col_half col_last">
-
-						<div id="contact_form">
-							<!-- submitted via jquery/axax, strips action attr on runtime if JS enabled, otherwise posts directly to sendmail.php as a fallback -->
-							<form class="standard" method="post" action="mail.php">
+						<div id="contact_form" class="form">
+							<div name="enquiry" class="standard" action="none">
 								<div class="field">
-									<span id="error-name" class="error hidden"><small>Name is required</small></span>
-									<input value="Name" title="Enter Your Name" type="text" size="45" name="cf_name" id="cf_name" class="textbox" />
+									<span id="form_name_error"
+                                          class="error hidden"><small>Name is required</small>
+                                    </span>
+									<input value="Name"
+                                           title="Enter Your Name"
+                                           type="text"
+                                           size="45"
+                                           name="form_name"
+                                           id="form_name"
+                                           class="textbox" />
 								</div>
 								<div class="field">
-									<span id="error-email" class="error hidden rounded"><small>Enter a valid email address</small></span>
-									<input value="Email" title="Enter a Valid Email" type="text" size="45" name="cf_email" id="cf_email" class="textbox" />
-									<input type="text" size="45" name="cf_email_2" id="cf_email_2" class="hidden" />
+									<span id="form_email_error" class="error hidden rounded"><small>Enter a valid email address</small></span>
+									<input value="Email"
+                                           title="Enter a Valid Email"
+                                           type="text"
+                                           size="45"
+                                           name="form_email"
+                                           id="form_email"
+                                           class="textbox" />
 								</div>
 								<div class="field">
-									<span id="error-message" class="error hidden rounded"><small>Message is required</small></span>
-									<textarea title="Enter a Message" name="cf_message" id="cf_message" cols="50" rows="6" class="textarea">Message...</textarea>
+									<span id="form_message_error" class="error hidden rounded"><small>Message is required</small></span>
+									<textarea title="Enter a Message"
+                                              name="form_message"
+                                              id="form_message"
+                                              cols="50"
+                                              rows="6"
+                                              class="textarea">Message...</textarea>
 								</div>
 								<div class="field clearfix">
-									<button type="submit" class="submit" value="Submit Form!" name="cf_submit" id="cf_submit"><span>Send Message</span></button>
+                                    <span id="invalid_form_message" class="error hidden rounded"><small></small></span>
+                                    <button id="submit" class="submit" value="Submit Form!"><span>Send Message</span></button>
 								</div>
-							</form>
+							</div>
 						</div>
 						
 					</div>
@@ -264,7 +286,5 @@
 	
 	
 	<p class="center scrolltop">[ <a href="#jump-top" title="Scroll to Top"><small>Back to Top</small></a> ]</p>
-	
-	<!--Resume / Portfolio Website Template by Cudazi.com for ThemeForest.net-->
 </body>
 </html>
