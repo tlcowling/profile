@@ -102,12 +102,12 @@ $(document).ready(function () {
             SubmitDialog.invalidFormMessage.hide();
 
             var data = {
-                name: 'bob',
-                email: 'bob@gmail.com',
-                message: 'a message of love'
+                name: SubmitDialog.nameField.val(),
+                email: SubmitDialog.emailField.val(),
+                message: SubmitDialog.messageField.val()
             };
 
-            var jqxhr = $.post('/api/v1/enquiry')
+            var jqxhr = $.post('/api/v1/enquiry', data)
                 .done(function(data) {
                     SubmitDialog.showPostResult(data, {'color':'green'});
                 })

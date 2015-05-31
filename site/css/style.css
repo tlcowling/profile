@@ -12,7 +12,7 @@ html,body {
 	padding:0;
 }
 body { 
-	background:#ebebeb url(../images/bg_body.gif);
+	background:#ebebeb url(./images/bg_body.gif);
 	color:#555;
 	border-top:3px solid #555;
 }
@@ -81,14 +81,14 @@ h5 {
 #wrapper {
 	width:784px;
 	border:1px solid #f2f2f2;
-	background:#f2f2f2 url(../images/bg_crosshatch.gif);
+	background:#f2f2f2 url(./images/bg_crosshatch.gif);
 	margin:40px auto 20px auto;
 }
 
 #main {
 	width:700px;
 	border:1px solid #fff;
-	background:#fff url(../images/bg_header_line.gif) no-repeat 2px 2px;
+	background:#fff url(./images/bg_header_line.gif) no-repeat 2px 2px;
 	margin:40px auto;
 }
 #wrapper, 
@@ -183,7 +183,7 @@ a#panel_toggle {
 	
 	padding:6px 0 0 0;
 	
-	background:#555 url(../images/arrow_expand_collapse.png) no-repeat 5px 2px;
+	background:#555 url(./images/arrow_expand_collapse.png) no-repeat 5px 2px;
 	display:block;
 	overflow:hidden;
 	
@@ -297,7 +297,7 @@ div.form .submit span {
 	display:block;
 	margin:0;
 	padding:0 15px 0 0;
-	background:url(../images/arrow_right_circle.png) no-repeat right top;
+	background:url(./images/arrow_right_circle.png) no-repeat right top;
 	line-height:18px;
 }
 div.form .submit:hover span {
@@ -307,7 +307,7 @@ div.form .submit:hover span {
 div.form .textbox,
 div.form .submit,
 div.form .textarea {
-	background:url(../images/bg_formfield.png) repeat-x left top;
+	background:url(./images/bg_formfield.png) repeat-x left top;
 }
 div.form .submit:hover {
 	color:#555;
@@ -380,7 +380,7 @@ a img {
 	width:15px;
 	height:15px;
 	overflow:hidden;
-	background:url(../images/back_to_top_sections.gif) no-repeat;
+	background:url(./images/back_to_top_sections.gif) no-repeat;
 	position:absolute;
 	top:5px;
 	right:0;
