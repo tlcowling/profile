@@ -14,6 +14,7 @@ var webserver  = require('gulp-webserver');
 var paths = {
   src: 'site',
   build: 'build/**',
+    buildimages: 'build/images/**/*',
   scripts: 'site/js/**/*.js',
   images: 'site/images/**/*'
 };
@@ -50,7 +51,7 @@ gulp.task('images', ['clean'], function() {
              .pipe(gulp.dest('build/images'));
 });
 
-gulp.task('deploy', ['images', 'usemin'], function() {
+gulp.task('deployfiles', ['images', 'usemin'], function() {
   return gulp.src(paths.build)
              .pipe(rsync({
                    username: 'deployer',
@@ -58,6 +59,20 @@ gulp.task('deploy', ['images', 'usemin'], function() {
                    hostname: 'tlcowling.com',
                    destination: '/var/www/tlcowling.com/profile'
                  }));     
+});
+
+gulp.task('deployimages', ['deployfiles'], function() {
+    return gulp.src(paths.buildimages)
+        .pipe(rsync({
+            username: 'deployer',
+            root: 'build',
+            hostname: 'tlcowling.com',
+            destination: '/var/www/tlcowling.com/'
+        }));
+});
+
+gulp.task('deploy', ['deployimages'], function() {
+
 });
 
 gulp.task('develop', function() {
