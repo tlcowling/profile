@@ -7,7 +7,7 @@
 }
 
 .spacious li {
-	margin: 15px 0;
+	margin: 0px 0;
 }
 
 .centered {
@@ -192,7 +192,7 @@ a#panel_toggle {
 	
 	padding:6px 0 0 0;
 	
-	background:#555 url(/images/arrow_expand_collapse.png) no-repeat 5px 2px;
+	background:#555 url('../images/arrow_expand_collapse.png') no-repeat 5px 2px;
 	display:block;
 	overflow:hidden;
 	
