@@ -1,5 +1,4 @@
-Profile
+[DEPRECATED] Profile
 =======
 
-My Profile website
 
